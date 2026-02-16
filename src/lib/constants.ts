@@ -172,3 +172,13 @@ export const ENGINEERING_CARDS: ServiceCard[] = [
         code: "TEAM-CORE"
     },
 ];
+
+export const PARTNERS = [
+    { name: "RISA", category: "Gov" },
+    { name: "MINICT", category: "Gov" },
+    { name: "BK GROUP", category: "Finance" },
+    { name: "RSSB", category: "Public" },
+    { name: "MTN", category: "Telco" },
+    { name: "I&M BANK", category: "Finance" },
+    { name: "COGEBANK", category: "Finance" },
+];
