@@ -46,3 +46,14 @@ body {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
 }
+
+@layer base {
+  :root {
+    --primary-rgb: 0, 240, 255; /* Match your hex code here */
+  }
+}
+
+/* A custom class to add "Life" to icons */
+.icon-glow {
+  filter: drop-shadow(0 0 8px rgba(var(--primary-rgb), 0.6));
+}
