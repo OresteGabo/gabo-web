@@ -1,3 +1,5 @@
+import { Layers, Network, Globe, Cpu, LucideIcon } from "lucide-react";
+
 // 1. Enums
 export enum ProjectStatus {
     PROPOSAL = "PROPOSAL",
@@ -134,3 +136,39 @@ export const getStatusColor = (status: ProjectStatus) => {
             return "bg-outline/10 text-outline";
     }
 };
+
+
+
+export interface ServiceCard {
+    title: string;
+    text: string;
+    Icon: LucideIcon;
+    code: string;
+}
+
+export const ENGINEERING_CARDS: ServiceCard[] = [
+    {
+        title: "Enterprise Solutions",
+        text: "Building mission-critical systems for finance and gov-tech. We specialize in migrating legacy complexity into modern, high-uptime microservices.",
+        Icon: Layers,
+        code: "PORTFOLIO-01"
+    },
+    {
+        title: "Cloud & Scalability",
+        text: "99.9% uptime architecture. We design auto-scaling infrastructure that handles millions of requests while optimizing your cloud burn-rate.",
+        Icon: Network,
+        code: "INFRA-WIN"
+    },
+    {
+        title: "Regional Impact",
+        text: "Pioneering Rwanda’s digital stack. From national ID integrations to local fintech hubs, we build tech that understands the African market.",
+        Icon: Globe,
+        code: "KIGALI-NODE"
+    },
+    {
+        title: "Elite Engineering",
+        text: "Our code is our contract. We deliver production-ready software using rigorous CI/CD pipelines and a 'security-first' development mindset.",
+        Icon: Cpu,
+        code: "TEAM-CORE"
+    },
+];
