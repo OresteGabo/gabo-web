@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Navbar } from '@/component/Navbar';
+import { Navbar } from '@/component/shared/Navbar';
 import { PROJECTS, CLIENTS, ProjectStatus, getStatusColor } from '@/lib/constants';
 import { Building2, User, HardHat, Calendar } from 'lucide-react';
 

@@ -5,7 +5,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 export const Navbar = () => (
     <nav className="flex justify-between items-center p-6 md:p-8 max-w-7xl mx-auto w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 bg-background/80 backdrop-blur-xl border-b border-outline/5">
-        <Link href="/" className="text-2xl font-black tracking-tighter text-primary">
+        <Link href="/public" className="text-2xl font-black tracking-tighter text-primary">
             {SITE_CONFIG.name}.
         </Link>
 

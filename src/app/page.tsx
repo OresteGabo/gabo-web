@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
-import { Navbar } from '@/component/Navbar';
-import { Footer } from '@/component/Footer';
-import { ImigongoBackground } from "@/component/ImigongoBackground";
+import { Navbar } from '@/component/shared/Navbar';
+import { Footer } from '@/component/shared/Footer';
+import { ImigongoBackground } from "@/component/shared/ImigongoBackground";
 
 // Import Section Components
 import { Hero } from '@/component/sections/Hero';

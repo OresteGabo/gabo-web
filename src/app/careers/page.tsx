@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Navbar } from '@/component/Navbar';
-import { Footer } from '@/component/Footer';
+import { Navbar } from '@/component/shared/Navbar';
+import { Footer } from '@/component/shared/Footer';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Code, GitFork, UserCog, Send } from 'lucide-react';
 
