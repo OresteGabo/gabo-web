@@ -37,9 +37,12 @@ export const Navbar = () => {
                     </Link>
 
                     {/* Primary Visible Button */}
-                    <button className="bg-[color:var(--md-sys-color-primary)] text-[color:var(--md-sys-color-on-primary)] px-6 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[color:var(--md-sys-color-primary)]/20">
+                    <Link
+                        href="/new-project"
+                        className="bg-[color:var(--md-sys-color-primary)] text-[color:var(--md-sys-color-on-primary)] px-6 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[color:var(--md-sys-color-primary)]/20 inline-block text-center"
+                    >
                         Start a Project
-                    </button>
+                    </Link>
 
                     {/* Hamburger (No full-screen blur logic) */}
                     <button
