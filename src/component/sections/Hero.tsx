@@ -65,18 +65,19 @@ export const Hero = () => {
                     </motion.div>
 
                     {/* Heading */}
-                    <motion.h1
+                    <motion.h2
                         variants={fadeUp}
                         initial="hidden"
                         animate="show"
                         transition={{ delay: 0.1 }}
-                        className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9]"
+                        /* Changed text-6xl/8xl to text-4xl/6xl */
+                        className="text-4xl md:text-6xl font-black tracking-tighter leading-[1.1] md:leading-[1.0]"
                     >
                         We build the <br />
                         <span className="text-primary">Tech.</span><br />
                         <span className="text-on-surface-variant/60">You build the</span><br />
                         Future.
-                    </motion.h1>
+                    </motion.h2>
 
                     {/* Description */}
                     <motion.p
