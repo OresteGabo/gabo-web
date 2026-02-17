@@ -57,3 +57,9 @@ body {
 .icon-glow {
   filter: drop-shadow(0 0 8px rgba(var(--primary-rgb), 0.6));
 }
+
+.input {
+  @apply w-full px-4 py-3 rounded-xl bg-background border border-outline/10
+  focus:outline-none focus:ring-2 focus:ring-primary/40
+  text-sm;
+}
