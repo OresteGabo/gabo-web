@@ -52,6 +52,10 @@ export interface Project {
         value: string;
         growth: string;
     };
+    playStoreUrl?: string;
+    appStoreUrl?: string;
+    liveUrl?: string;
+    imageUrl?: string;
 }
 
 // 3. Client Data
