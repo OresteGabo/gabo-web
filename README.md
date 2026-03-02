@@ -6,13 +6,31 @@ Estate, and Sports** --- so our partners can focus on operations.
 
 ------------------------------------------------------------------------
 
+## 🖼 Screenshots
+
+### Home
+![GABO Home](screenshots/home.png)
+
 ## 🚀 Tech Stack
 
--   **Framework:** Next.js 15 (App Router)
--   **Styling:** Tailwind CSS
--   **Language:** TypeScript
--   **Animations:** Framer Motion
--   **Icons:** Lucide React
+### Core
+- **Framework:** Next.js (App Router)
+- **UI Library:** React
+- **Language:** TypeScript
+
+### Styling
+- **CSS Framework:** Tailwind CSS
+- **PostCSS:** `@tailwindcss/postcss`
+
+### Motion + UI
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+
+### Tooling
+- **Linting:** ESLint (Next.js config)
+- **React Compiler:** Enabled (React Compiler / `reactCompiler: true`)
+
+> Versions are defined in `package.json`.
 
 ------------------------------------------------------------------------
 
