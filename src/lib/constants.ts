@@ -41,21 +41,13 @@ export interface Project {
     desc: string;
     status: ProjectStatus;
     category: ProjectCategory;
-    ownership: ProjectOwnership;
-    client: Client;
-    stack: string[];
-    isPublic: boolean;      // For public landing page
-    projectChief: string;   // Internal use
-    startDate: string;      // For timeline
-    metrics?: {
-        label: string;
-        value: string;
-        growth: string;
-    };
+    stack: string[]; // We keep this for SEO but hide it in the main UI
+    isPublic: boolean;
+    // NEW FIELDS:
     playStoreUrl?: string;
     appStoreUrl?: string;
     liveUrl?: string;
-    imageUrl?: string;
+    imageUrl?: string; // Add a path to a screenshot/mockup
 }
 
 // 3. Client Data
@@ -84,7 +76,7 @@ export const CLIENTS: Record<string, Client> = {
 };
 
 // 4. Project Data
-export const PROJECTS: Project[] = [
+/*export const PROJECTS: Project[] = [
     // --- GOV-TECH ---
     {
         id: "citizen-id-vault",
@@ -357,6 +349,131 @@ export const PROJECTS: Project[] = [
         isPublic: true
     }
     ];
+*/
+// lib/constants.ts (or wherever your PROJECTS array lives)
+
+export const PROJECTS: Project[] = [
+    {
+        id: "nexus-id-mobile",
+        title: "Nexus ID",
+        desc: "The sovereign identity layer for the modern citizen. Secure, biometric-encrypted civil registry access right on your smartphone.",
+        status: ProjectStatus.PRODUCTION,
+        category: ProjectCategory.GOV_TECH,
+        stack: ["Rust", "React Native"],
+        isPublic: true,
+        imageUrl: "/assets/screenshot14.png",
+        liveUrl: "https://nexus.gabo.systems",
+        playStoreUrl: "#",
+        appStoreUrl: "#"
+    },
+    {
+        id: "corepay-corporate",
+        title: "CorePay Business",
+        desc: "Next-generation bulk disbursement engine for corporations. Handle payroll, vendor payments, and tax reconciliation in one dashboard.",
+        status: ProjectStatus.PRODUCTION,
+        category: ProjectCategory.FINTECH,
+        stack: ["Go", "Kafka"],
+        isPublic: true,
+        imageUrl: "/assets/screenshot1.png",
+        liveUrl: "https://pay.gabo.systems",
+        playStoreUrl: "#",
+        appStoreUrl: "#"
+    },
+    {
+        id: "citypulse-urban",
+        title: "CityPulse",
+        desc: "Smart city monitoring app for municipal leaders. Real-time traffic, waste management, and utility grid health at a glance.",
+        status: ProjectStatus.BETA,
+        category: ProjectCategory.ANALYTICS,
+        stack: ["Python", "Mapbox"],
+        isPublic: true,
+        imageUrl: "/assets/screenshot3.png",
+        liveUrl: "https://city.gabo.systems",
+        appStoreUrl: "#"
+    },
+    {
+        id: "frostchain-logistics",
+        title: "FrostChain",
+        desc: "The ultimate cold-chain monitor. Ensuring pharmaceutical integrity from factory to clinic via real-time IoT synchronization.",
+        status: ProjectStatus.PRODUCTION,
+        category: ProjectCategory.LOGISTICS,
+        stack: ["C++", "MQTT"],
+        isPublic: true,
+        imageUrl: "/assets/screenshot4.png",
+        liveUrl: "https://frost.gabo.systems",
+        playStoreUrl: "#"
+    },
+    {
+        id: "vault-x-custody",
+        title: "Vault-X",
+        desc: "Institutional digital asset custody. Multi-signature security protocols designed for high-net-worth financial infrastructure.",
+        status: ProjectStatus.BETA,
+        category: ProjectCategory.SECURITY,
+        stack: ["Solidity", "AWS"],
+        isPublic: true,
+        imageUrl: "assets/screenshot1.png",
+        liveUrl: "https://vault.gabo.systems",
+        appStoreUrl: "#"
+    },
+    {
+        id: "agriyield-ai",
+        title: "AgriYield AI",
+        desc: "Satellite-driven crop health analysis. Helping national food agencies predict harvests and manage agricultural subsidies.",
+        status: ProjectStatus.DEVELOPMENT,
+        category: ProjectCategory.ANALYTICS,
+        stack: ["PyTorch", "GDAL"],
+        isPublic: true,
+        imageUrl: "assets/screenshot6.png",
+        liveUrl: "https://agri.gabo.systems",
+    },
+    {
+        id: "portmaster-core",
+        title: "PortMaster",
+        desc: "Maritime orchestration software for deep-water ports. Automating container movement and crane logistics with zero downtime.",
+        status: ProjectStatus.PRODUCTION,
+        category: ProjectCategory.LOGISTICS,
+        stack: ["C#", "SQL Server"],
+        isPublic: true,
+        imageUrl: "assets/screenshot7.png",
+        liveUrl: "https://port.gabo.systems"
+    },
+    {
+        id: "cybershield-ids",
+        title: "CyberShield",
+        desc: "Proactive intrusion detection for government data centers. Real-time behavioral analysis to stop threats before they escalate.",
+        status: ProjectStatus.PRODUCTION,
+        category: ProjectCategory.SECURITY,
+        stack: ["Rust", "eBPF"],
+        isPublic: true,
+        imageUrl: "assets/screenshot8.png",
+        liveUrl: "https://shield.gabo.systems"
+    },
+    {
+        id: "medlink-connect",
+        title: "MedLink",
+        desc: "Unified patient record exchange. Securely share medical history between authorized hospitals to save lives in emergencies.",
+        status: ProjectStatus.BETA,
+        category: ProjectCategory.GOV_TECH,
+        stack: ["Java", "FHIR"],
+        isPublic: true,
+        imageUrl: "assets/screenshot9.png",
+        liveUrl: "https://med.gabo.systems",
+        playStoreUrl: "#",
+        appStoreUrl: "#"
+    },
+    {
+        id: "routeoptima-lastmile",
+        title: "RouteOptima",
+        desc: "Hyper-efficient last-mile delivery fleet management. Reducing carbon footprint and delivery times through neural pathfinding.",
+        status: ProjectStatus.PRODUCTION,
+        category: ProjectCategory.LOGISTICS,
+        stack: ["Go", "TensorFlow"],
+        isPublic: true,
+        imageUrl: "assets/screenshot10.png",
+        liveUrl: "https://route.gabo.systems",
+        playStoreUrl: "#"
+    }
+];
 
 // 5. Site Config & Helpers
 export const SITE_CONFIG = {
