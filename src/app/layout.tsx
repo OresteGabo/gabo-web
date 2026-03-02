@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
         {/* Switch this class to 'light', 'dark', 'dark-hc', dark-medium-contrast etc. to change the whole site */}
-        <body className="light">
+        <body className="dark">
         {children}
         </body>
         </html>
