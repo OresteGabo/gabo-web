@@ -1,0 +1,42 @@
+.
+├── app
+│   ├── careers
+│   │   └── page.tsx
+│   ├── console
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── new-project
+│   │   ├── FormSection.tsx
+│   │   ├── StartProject.tsx
+│   │   └── SuccessView.tsx
+│   └── page.tsx
+├── assets
+├── component
+│   ├── sections
+│   │   ├── EngineeringCore.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Investors.tsx
+│   │   └── Portfolio.tsx
+│   ├── shared
+│   │   ├── Footer.tsx
+│   │   ├── ImigongoBackground.tsx
+│   │   └── Navbar.tsx
+│   └── ui
+│       ├── Button.tsx
+│       ├── InvestorModel.tsx
+│       └── StatCard.tsx
+├── lib
+│   ├── constants.ts
+│   └── utils.ts
+└── styles
+    └── theme
+        ├── dark-hc.css
+        ├── dark-mc.css
+        ├── dark.css
+        ├── light-hc.css
+        ├── light-mc.css
+        └── light.css
+
+13 directories, 27 files
